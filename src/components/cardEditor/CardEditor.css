@@ -1,0 +1,43 @@
+      body, html, #root {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+      }
+
+.wholePage{
+        display: flex;
+        flex-direction: column;
+        }
+
+.halfPage{
+        display: flex;
+        flex-direction: row;
+        flex: 10%;
+        }
+
+
+      .cardMarkupDiv {
+        display: flex;
+        flex-direction: row;
+        min-height: 50vh;
+      }
+      .cardMarkupPanel {
+        flex: 1;
+        margin: 5px;
+        display: flex;
+        flex-direction: column;
+      }
+      .chord-output {
+        border-spacing: 0;
+        border-collapse: collapse;
+      }
+      .chord-output td {
+        padding: 0;
+      }
+      .chord-output table {
+        margin: 10px 0;
+      }

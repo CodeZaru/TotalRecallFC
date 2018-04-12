@@ -1,0 +1,81 @@
+/*
+.card-editor {
+  display: flex;
+  flex-direction: column;
+}
+*/
+.cardPreviewContainer {
+  cursor: pointer;
+  height: 400px;
+  width: 400px;
+  perspective: 800px;
+  position: relative;
+  margin: auto;
+  transition: ease-in;
+}
+
+
+.cardPreview {
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  border: 1px solid #300;
+  transform-style: preserve-3d;
+  transition: all 0.4s ease-in-out;
+}
+
+
+.cardPreview:hover {
+  transform: rotateY(180deg);
+  transition: all 0.4s ease-in-out;
+  }
+/*
+.cardPreviewContainer {
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  border: 1px solid #300;
+  transform-style: preserve-3d;
+  transition: all 0.4s ease-in-out;
+}
+
+.cardPreviewContainer:hover {
+  transform: rotateY(180deg);
+  transition: all 0.4s ease-in-out;
+}
+*/
+.cardPreview .frontPreview {
+  height: 400px;
+  width: 400px;
+  backface-visibility: hidden;
+  position: absolute;
+  overflow: hidden;
+  text-align: center;
+  background-color: rgba(255, 251, 251, 1);
+}
+
+.cardPreview .backPreview {
+  height: 400px;
+  width: 400px;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+
+.eng{
+  color: #333;
+  font-size: 2.3em;
+  padding-top: 40%;
+}
+
+.cardEditorQuestion{
+  color: #333;
+  font-size: 6.3em;
+  padding-top: 20%;
+}
+
+.pin{
+    color: rgba(200, 10, 10, 1);
+    font-size: 2.3em;
+    padding-top: 10%;
+}
+
